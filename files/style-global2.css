@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+.head{
+    width: 80%;
+    margin: 20px auto;
+}
+.travobe{
+    text-decoration: none;
+    color:rgb(111, 175, 74);
+}
+.log-greet{
+    display: inline-block;
+}
+.profile-link{
+    text-decoration: none;
+    padding: 0 20px;
+    color:purple;
+}
+.pro-photo{
+    height:15px;
+    width:15px;
+    background: #ccc;
+    padding: 5px;
+    position: relative;
+    top:5px;
+    margin: 0 5px ;
+    border-radius: 50%;
+}
+.select-prefer{
+    width:90%;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.prefer-con{
+    width:80%;
+    margin: 20px auto;
+}
+.prefer-con input{
+    margin: 10px 0;
+}
+.continue-btn{
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    display: none;
+}
+.type-des{
+    margin: 10px 0;
+}
+.head-msg{
+    width:90%;
+    margin: 0 auto;
+    font-size: 40px;
+}
+.select-preferences-con{
+    width:90%;
+    margin: 20px auto;
+}
+.place-head{
+    display: inline-block;
+}
+#search{
+    padding: 5px;
+    width: 50%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.add-btn{
+    background: red;
+    position: relative;
+    right: 4px;
+    padding: 6px;
+    cursor: pointer;
+    color:white;
+}
+.add-btn:active{
+    background: black;
+}
+.entered-location{
+    width: 50%;
+    margin: 10px 0;
+    display: flex;
+}
+.entered-location:nth-child(odd){
+    background: #ccc;
+}
+.entered-location:nth-child(even){
+    background: #aaa;
+}
+.location{
+    width:90%;
+    padding: 10px;
+    color:white;
+}
+.remove-con{
+    width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.remove-btn{
+    width:20px;
+    height:20px;
+    display: inline-block;
+    background: white;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.remove-btn::before{
+    content: "";
+    position: absolute;
+    background: black;
+    width:70%;
+    height:3px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50% );
+}
+.remove-btn:hover{
+    background: black;
+}
+.remove-btn:hover::before{
+    background: white;
+}
+
+.choice-con{
+    width:90%;
+    margin: 20px auto;
+}
+
+.choices{
+    font-size: 25px;
+}
+.choice-con p{
+    margin: 10px 0;
+}
+.results{
+    width: 90%;
+    margin: 0 auto;
+}

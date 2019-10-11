@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+.main-con{
+    width:100%;
+    height:100vh;
+}
+.sub-con{
+    width:80%;
+    height:80%;
+    background: white;
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6)
+}
+.sub-con div{
+    flex:1;
+}
+.sub-con1{
+    background: #1959a9;
+    position: relative;
+}
+.p-con
+{
+    margin: auto;
+    width: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.p-con p{
+    
+    color: white;
+    font-size: 40px;
+    text-align: left;
+}
+.more{
+    text-decoration: none;
+    padding: 10px 20px;
+    border:1px solid white;
+    position: relative;
+    top:20px;
+    color:white;
+}
+.signup-login-form-con{
+    width:80%;
+    margin: 20px auto;
+    text-align: center;
+}
+.login-signup-select-con{
+    width:100%;
+}
+.sign-up,.login{
+    font-family: 'Ubuntu', sans-serif;
+    width:30%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 1px solid #1959a9;
+    background: white;
+    cursor: pointer;
+    color:#1959a9;
+}
+.sign-up:focus,.login:focus{
+    outline:none;
+}
+.select-act{
+    transition: all .5s ease;
+    background: #1959a9;
+    color:white;
+    font-size: 23px;
+}
+.sign-form{
+    width:100%;
+    margin: 20px auto;
+}
+.input{
+    font-family: 'Ubuntu', sans-serif;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 5px;
+    border:none;
+    border-bottom:1px solid black;
+    font-size: 19px;
+}
+.form input:focus{
+    outline:none;
+}
+.confirm-signup{
+    width:80%;
+    margin: 20px 0;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    background: yellowgreen;
+    border:none;
+    border-bottom:1px solid white;
+    color:white;
+}
+.confirm-signup:active{
+    transform: scale(0.99);
+}
+.login-option{
+    color:#aaa;
+}
+.fb-gmail-login-option{
+    width:80%;
+    margin: 20px auto;
+}
+.fb-gmail-login-option button{
+    width:100%;
+    margin: 5px;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    border:none;
+    color:white;
+}
+.fb-login{
+    background: blue;
+}
+.gmail-login{
+    background: red;
+}
+.confirm-login{
+    width: 80%;
+    margin: 20px 0;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    background: yellowgreen;
+    border:none;
+    color:white;
+}
+.forgot-pwd{
+    color:blue;
+    text-align: left;
+}
+.login-form{
+    display: none;
+}
+
+#about{
+    width: 90%;
+    margin: auto;
+}
+#about h2{
+    margin: 20px 0;
+    font-size: 30px
+}
+#about p{
+    font-size: 20px;
+}
+.steps-con{
+    position: relative;
+    width:90%;
+    margin: 20px auto;
+    background: #ddd;
+}
+.steps-con p{
+    font-size: 19px;
+    padding: 20px;
+}
+.steps-div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.steps-div div{
+    flex:1;
+}
+.step-img{
+    text-align: center;
+}
+.step-img img{
+    width:70%;
+    margin-bottom: 20px;
+}
+.next,.prev{
+    position: absolute;
+    top:50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.next{
+    right:0;
+}
+.step,.step-img img{
+    display: none;
+}
+.logged-in{
+    width: 80%;
+    margin: 20px auto;
+}
+.log-greet{
+    display: inline-block;
+}
+.profile-link{
+    text-decoration: none;
+    padding: 0 20px;
+    color:purple;
+}
+.pro-photo{
+    height:15px;
+    width:15px;
+    background: #ccc;
+    padding: 5px;
+    position: relative;
+    top:5px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
