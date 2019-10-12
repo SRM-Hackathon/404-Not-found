@@ -64,7 +64,6 @@ if(isset($_POST['submitP'])){
                 <button name='post'>POST</button>
             </form>");
             }
-            
             ?>
         </div>
 
@@ -83,12 +82,14 @@ if(isset($_POST['submitP'])){
             $_SESSION['id'] = 1;
 
             while($_SESSION['$row'] = $_SESSION['$result']->fetch_assoc()){
-                if($_SESSION['des'] == $_SESSION['$row']["Location"])
+                if($_SESSION['des'] == $_SESSION['$row']["Location"] && $_SESSION['name'] != $_SESSION['$row']["Name"])
                 {
-                    echo ("id: " . $_SESSION['$row']["id"]. " Name: " . $_SESSION['$row']["Name"]. " Location :" .$_SESSION['$row']["Location"]. " Start: " . $_SESSION['$row']["Start"]. " End: " . $_SESSION['$row']["End"]. "<br>");
+                    echo ("id: " . $_SESSION['id']. " Name: " . $_SESSION['$row']["Name"]. " Location :" .$_SESSION['$row']["Location"]. " Start: " . $_SESSION['$row']["Start"]. " End: " . $_SESSION['$row']["End"]. "<br>");
+                    $_SESSION['id'] += 1;
                 }
             }
-
+            if($_SESSION['id'] == 1)
+                echo("No Results");
             ?>
         </div>
 
